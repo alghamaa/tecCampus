@@ -1,10 +1,10 @@
-{\rtf1\fbidis\ansi\deff0\nouicompat{\fonttbl{\f0\fmodern\fprq1\fcharset0 Lucida Console;}{\f1\fmodern\fprq1 Lucida Console;}{\f2\fnil\fcharset0 Calibri;}}
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fmodern\fprq1\fcharset0 Lucida Console;}{\f1\fmodern\fprq1 Lucida Console;}{\f2\fnil\fcharset0 Calibri;}}
 {\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;\red191\green0\blue0;\red64\green255\blue255;\red64\green255\blue64;}
 {\*\generator Riched20 10.0.18362}\viewkind4\uc1 
 \pard\ltrpar\sa200\sl276\slmult1\f0\fs18\lang2057 //\f1\lang9\par
-\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
-\cf0 $ git init\f0\lang2057  \f1\lang9\par
-Initialized empty Git repository in C:/Users/User/Desktop/gitex/.git/\par
+\cf1\f0 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git init\lang2057  \f1\lang9\par
+\f0 Initialized empty Git repository in C:/Users/User/Desktop/gitex/.git/\par
 \par
 \cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
 \cf0 $ git status\par
@@ -210,6 +210,277 @@ Switched to branch 'master'\par
 \cf0 $ git status\par
 On branch master\par
 nothing to commit, working tree clean\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $\par
+\f2\fs22 ///////\par
+\cf1\f0\fs18 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git log --online\par
+fatal: unrecognized argument: --online\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+       \b  \cf5\b0 New Rich Text Document.rtf\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git log online\par
+fatal: ambiguous argument 'online': unknown revision or path not in the working tree.\par
+Use '--' to separate paths from revisions, like this:\par
+'git <command> [<revision>...] -- [<file>...]'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git log --online\par
+fatal: unrecognized argument: --online\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git log --oneline\par
+\cf3 d2e0b2e (\cf6 HEAD -> \cf7 master\cf3 )\cf0  add prot\par
+\cf3 182c4e1\cf0  updat html and css files\par
+\cf3 e542068\cf0  add This html and css files\par
+\cf3 3487b24\cf0  add This html and css files\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git ^C\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git checkout 3487b24\par
+Note: switching to '3487b24'.\par
+\par
+You are in 'detached HEAD' state. You can look around, make experimental\par
+changes and commit them, and you can discard any commits you make in this\par
+state without impacting any branches by switching back to a branch.\par
+\par
+If you want to create a new branch to retain commits you create, you may\par
+do so (now or later) by using -c with the switch command. Example:\par
+\par
+  git switch -c <new-branch-name>\par
+\par
+Or undo this operation with:\par
+\par
+  git switch -\par
+\par
+Turn off this advice by setting config variable advice.detachedHead to false\par
+\par
+HEAD is now at 3487b24 add This html and css files\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  ((3487b24...))\par
+\cf0 $ git checkout master\par
+Previous HEAD position was 3487b24 add This html and css files\par
+Switched to branch 'master'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git reset e542068\par
+Unstaged changes after reset:\par
+M      \b  \b0 app.css\par
+M      \b  \b0 home.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git reset e542068\par
+Unstaged changes after reset:\par
+M      \b  \b0 app.css\par
+M      \b  \b0 home.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git reset e542068 --hard\par
+HEAD is now at e542068 add This html and css files\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git log --oneline\par
+\cf3 e542068 (\cf6 HEAD -> \cf7 master\cf3 )\cf0  add This html and css files\par
+\cf3 3487b24\cf0  add This html and css files\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git master\par
+git: 'master' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+       \b  \b0 restore\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+       \b  \cf5\b0 New Rich Text Document.rtf\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git add .\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+       \b  \cf1\b0 new file:   New Rich Text Document.rtf\par
+\par
+\par
+User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git  commit -m"add rtf file"\par
+[master 137eb60] add rtf file\par
+ 1 file changed, 219 insertions(+)\par
+ create mode 100644 New Rich Text Document.rtf\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+       \b  \cf5\b0 aboutMe.html\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git add aboutMe.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git commit -m"This is About Me HTML"\par
+[master cbc5fcd] This is About Me HTML\par
+ 1 file changed, 10 insertions(+)\par
+ create mode 100644 aboutMe.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git checkout master\par
+Already on 'master'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git branch about\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git checkout about\par
+Switched to branch 'about'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git status\par
+On branch about\par
+nothing to commit, working tree clean\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git branch -a\par
+* \cf1 about\par
+\cf0   master\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git status\par
+On branch about\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+       \b  \cf5\b0 about.html\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git add about.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git connit -m"Now branch with now file"\par
+git: 'connit' is not a git command. See 'git --help'.\par
+\par
+The most similar commands are\par
+       \b  \b0 commit\par
+       \b  \b0 config\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git commit -m"Now branch with now file"\par
+[about bcbe451] Now branch with now file\par
+ 1 file changed, 10 insertions(+)\par
+ create mode 100644 about.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git checkout\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git branch -a\par
+* \cf1 about\par
+\cf0   master\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git check out master\par
+git: 'check' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+       \b  \b0 checkout\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git branch -a\par
+* \cf1 about\par
+\cf0   master\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git chckout master\par
+git: 'chckout' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+       \b  \b0 checkout\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git checkout about\par
+Switched to branch 'about'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git restore <file>..." to discard changes in working directory)\par
+       \b  \cf5\b0 modified:   app.css\par
+\cf0        \b  \cf5\b0 modified:   home.html\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git add .\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes to be committed:\par
+  (use "git restore --staged <file>..." to unstage)\par
+       \b  \cf1\b0 modified:   app.css\par
+\cf0        \b  \cf1\b0 modified:   home.html\par
+\par
+\par
+User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git connit -m"add css style to body"\par
+git: 'connit' is not a git command. See 'git --help'.\par
+\par
+The most similar commands are\par
+       \b  \b0 commit\par
+       \b  \b0 config\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git checkout about\par
+Switched to branch 'about'\par
+M      \b  \b0 app.css\par
+M      \b  \b0 home.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (about)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+M      \b  \b0 app.css\par
+M      \b  \b0 home.html\par
+\par
+\cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
+\cf0 $ git merge about\par
+Updating cbc5fcd..bcbe451\par
+Fast-forward\par
+ about.html | 10 \cf1 ++++++++++\par
+\cf0  1 file changed, 10 insertions(+)\par
+ create mode 100644 about.html\par
 \par
 \cf1 User@DESKTOP-ND7PCIO \cf2 MINGW64 \cf3 ~/Desktop/gitex\cf4  (master)\par
 \cf0 $\par
